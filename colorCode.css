@@ -1,0 +1,105 @@
+/* === My Personal Resume Styling - Jasdeep Sidhu === */
+/* I'm going for a pink theme with a clean and soft look, and using dark brown for all text for contrast and warmth :) */
+
+:root {
+  --light-pink: #ffe4ec;         /* This is the soft background pink */
+  --medium-pink: #fbb6ce;        /* Mid-tone pink for accents */
+  --deep-pink: #f784a7;          /* This one's for navbar and bold highlights */
+  --highlight-pink: #ffd6e8;     /* Used in section backgrounds for a gentle look */
+  --text-brown: #4e2a2a;         /* I chose this dark brown for text instead of black - looks more friendly */
+  --section-border: #f5c0d1;     /* Light pink border just to separate sections a bit */
+}
+
+/* General body styles */
+body {
+  font-family: 'Segoe UI', sans-serif;  /* I like how clean and readable this font is */
+  background-color: var(--light-pink);  /* Light pink all over the background */
+  color: var(--text-brown);             /* All main text will use this brown */
+  margin: 0;
+  padding: 0;
+}
+
+/* Headings are dark brown and bold */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text-brown);
+  font-weight: bold;
+}
+
+/* Navbar style - went with a deep pink and white links */
+.navbar {
+  background-color: var(--deep-pink);
+}
+
+/* Navbar brand and links in white */
+.navbar-brand,
+.nav-link {
+  color: white !important;
+}
+
+/* Hover effect to make links pop in a soft pink */
+.nav-link:hover {
+  color: var(--highlight-pink) !important;
+}
+
+/* Each section has padding and a subtle border at the bottom */
+section {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  border-bottom: 1px solid var(--section-border);
+}
+
+/* Light pink for general sections */
+.bg-light {
+  background-color: var(--highlight-pink) !important;
+}
+
+/* Slightly deeper pink for alt sections */
+.bg-white {
+  background-color: #fff0f5 !important;
+}
+
+/* Navbar and contact section use deep pink background */
+.bg-dark {
+  background-color: var(--deep-pink) !important;
+}
+
+/* Force text to stay white in pink areas */
+.text-white {
+  color: white !important;
+}
+
+/* All links look like regular dark brown text with underline */
+a {
+  color: var(--text-brown);
+  text-decoration: underline;
+}
+
+/* Hovering a link adds a brighter pink to match the theme */
+a:hover {
+  color: var(--deep-pink);
+}
+
+/* List items in sections (like skills/education) get soft backgrounds and pink outlines */
+ul.list-group li {
+  background-color: #fff9fb;     /* Very light pink background */
+  border: 1px solid #f5b6cc;     /* Subtle pink border */
+  margin-bottom: 5px;
+}
+
+/* Better line spacing for any list */
+ul li {
+  line-height: 1.7;
+}
+
+/* This is for any card style sections (used if I expand later) */
+.resumeCard {
+  border: none;
+  background-color: var(--highlight-pink);
+  box-shadow: 0 5px 15px rgba(247, 132, 167, 0.2); /* Soft shadow in pink */
+  transition: transform 0.2s ease-in-out;
+}
+
+/* Slight zoom effect when hovering a card */
+.resumeCard:hover {
+  transform: scale(1.02);
+}
